@@ -1,0 +1,13 @@
+<%- include ('partials/_header')  %>
+
+<form action="/update/<%= data.id %>" method="post" autocomplete="off">
+    <div>
+        <input type="text" name="nombre" value="<%= data.nombre %>">
+    </div>
+    <div>
+        <input type="text" name="artista" value="<%= data.artista %>">
+    </div>
+    <button type="submit">Guardar</button>
+</form>
+
+<%- include ('partials/_footer')  %>
